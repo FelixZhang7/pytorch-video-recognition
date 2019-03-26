@@ -1,0 +1,47 @@
+common:
+    model:
+        type: classify # tsm, slowfast, classify
+        backbone: resnet50_3d
+        num_class: 152
+        dropout: 0.8
+        pretrained: False
+
+        kwargs:
+            bn_group_size: 1
+            bn_sync_stats: True
+            sample_size: 224
+            sample_duration: 64
+            shortcut_type: B
+
+    
+    augmentation:
+        input_size: 224
+        test_resize: 256
+        # colorjitter: [0.2, 0.2, 0.2, 0.1]
+        # colorold: True
+        # mix_up: 1.0
+
+    workers: 3
+    batch_size: 16
+    lr_scheduler:
+        type: STEP 
+        lr_steps: [5000, 9000, 12000]
+        lr_mults: [0.1, 0.1, 0.1]
+
+        base_lr: 0.25
+        warmup_steps: 500
+        warmup_lr: 0.1
+        # min_lr: 0.0
+        max_iter: 15010
+
+    momentum: 0.9
+    weight_decay: 0.0001
+    nesterov: True
+
+    val_freq: 250
+    print_freq: 10
+
+    train_root: /
+    train_source: /mnt/lustre/share/jipuzhao/benchmarks/douyin/douyin_v5/lists/rgb_train.txt
+    val_root: /
+    val_source: /mnt/lustre/share/jipuzhao/benchmarks/douyin/douyin_v5/lists/rgb_val.txt

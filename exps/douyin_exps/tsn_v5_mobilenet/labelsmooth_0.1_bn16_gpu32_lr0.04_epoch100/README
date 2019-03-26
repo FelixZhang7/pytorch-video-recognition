@@ -1,0 +1,5 @@
+result: top1 acc @val_A : 87.75%
+
+ckpt_path: "/mnt/lustre/sunguanxiong/code/pva/video/new/exps/douyin_exps/tsn_v5_mobilenet/mixup_0.2_100epks_bn16_gpu32_lr0.04/ckpt_best.pth.tar"
+
+confulence_address: "http://confluence.sensetime.com/pages/viewpage.action?pageId=53553725"

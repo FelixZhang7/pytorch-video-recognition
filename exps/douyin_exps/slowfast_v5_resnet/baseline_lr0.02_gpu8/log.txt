@@ -1,0 +1,242 @@
+[2019-03-12 11:55:21,406] args: Namespace(config='./exps/douyin_exps/tsn_v5_slowfast/colorjitter_lr0.02_gpu8/config.yaml', dynamic_loss_scale=False, evaluate=False, fake=False, fp16=False, fp16_normal_bn=False, fuse_prob=False, fusion_list=None, load_path='', recover=False, static_loss_scale=1, sync=False)
+[2019-03-12 11:55:21,408] config: {'augmentation': {'input_size': 224, 'test_resize': 256},
+ 'batch_size': 64,
+ 'lr_scheduler': {'base_lr': 0.005,
+                  'last_iter': -1,
+                  'lr_mults': [0.1, 0.1, 0.1],
+                  'lr_steps': [5000, 9000, 12000],
+                  'max_iter': 15010,
+                  'optimizer': SGD (
+Parameter Group 0
+    dampening: 0
+    initial_lr: 0.005
+    lr: 0.005
+    momentum: 0.9
+    nesterov: True
+    weight_decay: 0.0001
+),
+                  'type': 'STEP',
+                  'warmup_lr': 0.02,
+                  'warmup_steps': 500},
+ 'model': {'backbone': 'resnet50',
+           'dropout': 0.8,
+           'kwargs': {'bn_group': None,
+                      'bn_group_size': 1,
+                      'bn_sync_stats': True,
+                      'bn_var_mode': syncbnVarMode_t.L2},
+           'num_class': 152,
+           'num_segments': 3,
+           'pretrained': True,
+           'type': 'slowfast'},
+ 'momentum': 0.9,
+ 'nesterov': True,
+ 'print_freq': 10,
+ 'save_path': './exps/douyin_exps/tsn_v5_slowfast/colorjitter_lr0.02_gpu8',
+ 'train_root': '/',
+ 'train_source': '/mnt/lustre/share/jipuzhao/benchmarks/douyin/douyin_v5/lists/rgb_train.txt',
+ 'val_dense': False,
+ 'val_freq': 250,
+ 'val_root': '/',
+ 'val_source': '/mnt/lustre/share/jipuzhao/benchmarks/douyin/douyin_v5/lists/rgb_val.txt',
+ 'weight_decay': 0.0001,
+ 'workers': 3}
+[2019-03-12 12:00:25,450] args: Namespace(config='./exps/douyin_exps/tsn_v5_slowfast/colorjitter_lr0.02_gpu8/config.yaml', dynamic_loss_scale=False, evaluate=False, fake=False, fp16=False, fp16_normal_bn=False, fuse_prob=False, fusion_list=None, load_path='', recover=False, static_loss_scale=1, sync=False)
+[2019-03-12 12:00:25,453] config: {'augmentation': {'input_size': 224, 'test_resize': 256},
+ 'batch_size': 64,
+ 'lr_scheduler': {'base_lr': 0.005,
+                  'last_iter': -1,
+                  'lr_mults': [0.1, 0.1, 0.1],
+                  'lr_steps': [5000, 9000, 12000],
+                  'max_iter': 15010,
+                  'optimizer': SGD (
+Parameter Group 0
+    dampening: 0
+    initial_lr: 0.005
+    lr: 0.005
+    momentum: 0.9
+    nesterov: True
+    weight_decay: 0.0001
+),
+                  'type': 'STEP',
+                  'warmup_lr': 0.02,
+                  'warmup_steps': 500},
+ 'model': {'backbone': 'resnet50',
+           'dropout': 0.8,
+           'kwargs': {'bn_group': None,
+                      'bn_group_size': 1,
+                      'bn_sync_stats': True,
+                      'bn_var_mode': syncbnVarMode_t.L2},
+           'num_class': 152,
+           'num_segments': 3,
+           'pretrained': True,
+           'type': 'slowfast'},
+ 'momentum': 0.9,
+ 'nesterov': True,
+ 'print_freq': 10,
+ 'save_path': './exps/douyin_exps/tsn_v5_slowfast/colorjitter_lr0.02_gpu8',
+ 'train_root': '/',
+ 'train_source': '/mnt/lustre/share/jipuzhao/benchmarks/douyin/douyin_v5/lists/rgb_train.txt',
+ 'val_dense': False,
+ 'val_freq': 250,
+ 'val_root': '/',
+ 'val_source': '/mnt/lustre/share/jipuzhao/benchmarks/douyin/douyin_v5/lists/rgb_val.txt',
+ 'weight_decay': 0.0001,
+ 'workers': 3}
+[2019-03-12 12:08:17,461] args: Namespace(config='./exps/douyin_exps/tsn_v5_slowfast/colorjitter_lr0.02_gpu8/config.yaml', dynamic_loss_scale=False, evaluate=False, fake=False, fp16=False, fp16_normal_bn=False, fuse_prob=False, fusion_list=None, load_path='', recover=False, static_loss_scale=1, sync=False)
+[2019-03-12 12:08:17,473] config: {'augmentation': {'input_size': 224, 'test_resize': 256},
+ 'batch_size': 1,
+ 'lr_scheduler': {'base_lr': 0.005,
+                  'last_iter': -1,
+                  'lr_mults': [0.1, 0.1, 0.1],
+                  'lr_steps': [5000, 9000, 12000],
+                  'max_iter': 15010,
+                  'optimizer': SGD (
+Parameter Group 0
+    dampening: 0
+    initial_lr: 0.005
+    lr: 0.005
+    momentum: 0.9
+    nesterov: True
+    weight_decay: 0.0001
+),
+                  'type': 'STEP',
+                  'warmup_lr': 0.02,
+                  'warmup_steps': 500},
+ 'model': {'backbone': 'resnet50',
+           'dropout': 0.8,
+           'kwargs': {'bn_group': None,
+                      'bn_group_size': 1,
+                      'bn_sync_stats': True,
+                      'bn_var_mode': syncbnVarMode_t.L2},
+           'num_class': 152,
+           'type': 'slowfast'},
+ 'momentum': 0.9,
+ 'nesterov': True,
+ 'print_freq': 10,
+ 'save_path': './exps/douyin_exps/tsn_v5_slowfast/colorjitter_lr0.02_gpu8',
+ 'train_root': '/',
+ 'train_source': '/mnt/lustre/share/jipuzhao/benchmarks/douyin/douyin_v5/lists/rgb_train.txt',
+ 'val_freq': 250,
+ 'val_root': '/',
+ 'val_source': '/mnt/lustre/share/jipuzhao/benchmarks/douyin/douyin_v5/lists/rgb_val.txt',
+ 'weight_decay': 0.0001,
+ 'workers': 3}
+[2019-03-12 13:18:31,517] args: Namespace(config='./exps/douyin_exps/tsn_v5_slowfast/colorjitter_lr0.02_gpu8/config.yaml', dynamic_loss_scale=False, evaluate=False, fake=False, fp16=False, fp16_normal_bn=False, fuse_prob=False, fusion_list=None, load_path='', recover=False, static_loss_scale=1, sync=False)
+[2019-03-12 13:18:31,519] config: {'augmentation': {'input_size': 224, 'test_resize': 256},
+ 'batch_size': 1,
+ 'lr_scheduler': {'base_lr': 0.005,
+                  'last_iter': -1,
+                  'lr_mults': [0.1, 0.1, 0.1],
+                  'lr_steps': [5000, 9000, 12000],
+                  'max_iter': 15010,
+                  'optimizer': SGD (
+Parameter Group 0
+    dampening: 0
+    initial_lr: 0.005
+    lr: 0.005
+    momentum: 0.9
+    nesterov: True
+    weight_decay: 0.0001
+),
+                  'type': 'STEP',
+                  'warmup_lr': 0.02,
+                  'warmup_steps': 500},
+ 'model': {'backbone': 'resnet50',
+           'dropout': 0.8,
+           'kwargs': {'bn_group': None,
+                      'bn_group_size': 1,
+                      'bn_sync_stats': True,
+                      'bn_var_mode': syncbnVarMode_t.L2},
+           'num_class': 152,
+           'type': 'slowfast'},
+ 'momentum': 0.9,
+ 'nesterov': True,
+ 'print_freq': 10,
+ 'save_path': './exps/douyin_exps/tsn_v5_slowfast/colorjitter_lr0.02_gpu8',
+ 'train_root': '/',
+ 'train_source': '/mnt/lustre/share/jipuzhao/benchmarks/douyin/douyin_v5/lists/rgb_train.txt',
+ 'val_freq': 250,
+ 'val_root': '/',
+ 'val_source': '/mnt/lustre/share/jipuzhao/benchmarks/douyin/douyin_v5/lists/rgb_val.txt',
+ 'weight_decay': 0.0001,
+ 'workers': 3}
+[2019-03-12 13:21:19,494] args: Namespace(config='./exps/douyin_exps/tsn_v5_slowfast/colorjitter_lr0.02_gpu8/config.yaml', dynamic_loss_scale=False, evaluate=False, fake=False, fp16=False, fp16_normal_bn=False, fuse_prob=False, fusion_list=None, load_path='', recover=False, static_loss_scale=1, sync=False)
+[2019-03-12 13:21:19,495] config: {'augmentation': {'input_size': 224, 'test_resize': 256},
+ 'batch_size': 1,
+ 'lr_scheduler': {'base_lr': 0.005,
+                  'last_iter': -1,
+                  'lr_mults': [0.1, 0.1, 0.1],
+                  'lr_steps': [5000, 9000, 12000],
+                  'max_iter': 15010,
+                  'optimizer': SGD (
+Parameter Group 0
+    dampening: 0
+    initial_lr: 0.005
+    lr: 0.005
+    momentum: 0.9
+    nesterov: True
+    weight_decay: 0.0001
+),
+                  'type': 'STEP',
+                  'warmup_lr': 0.02,
+                  'warmup_steps': 500},
+ 'model': {'backbone': 'resnet50',
+           'dropout': 0.8,
+           'kwargs': {'bn_group': None,
+                      'bn_group_size': 1,
+                      'bn_sync_stats': True,
+                      'bn_var_mode': syncbnVarMode_t.L2},
+           'num_class': 152,
+           'type': 'slowfast'},
+ 'momentum': 0.9,
+ 'nesterov': True,
+ 'print_freq': 10,
+ 'save_path': './exps/douyin_exps/tsn_v5_slowfast/colorjitter_lr0.02_gpu8',
+ 'train_root': '/',
+ 'train_source': '/mnt/lustre/share/jipuzhao/benchmarks/douyin/douyin_v5/lists/rgb_train.txt',
+ 'val_freq': 250,
+ 'val_root': '/',
+ 'val_source': '/mnt/lustre/share/jipuzhao/benchmarks/douyin/douyin_v5/lists/rgb_val.txt',
+ 'weight_decay': 0.0001,
+ 'workers': 3}
+[2019-03-12 13:32:20,623] args: Namespace(config='./exps/douyin_exps/tsn_v5_slowfast/colorjitter_lr0.02_gpu8/config.yaml', dynamic_loss_scale=False, evaluate=False, fake=False, fp16=False, fp16_normal_bn=False, fuse_prob=False, fusion_list=None, load_path='', recover=False, static_loss_scale=1, sync=False)
+[2019-03-12 13:32:20,625] config: {'augmentation': {'input_size': 224, 'test_resize': 256},
+ 'batch_size': 1,
+ 'lr_scheduler': {'base_lr': 0.005,
+                  'last_iter': -1,
+                  'lr_mults': [0.1, 0.1, 0.1],
+                  'lr_steps': [5000, 9000, 12000],
+                  'max_iter': 15010,
+                  'optimizer': SGD (
+Parameter Group 0
+    dampening: 0
+    initial_lr: 0.005
+    lr: 0.005
+    momentum: 0.9
+    nesterov: True
+    weight_decay: 0.0001
+),
+                  'type': 'STEP',
+                  'warmup_lr': 0.02,
+                  'warmup_steps': 500},
+ 'model': {'backbone': 'resnet50',
+           'dropout': 0.8,
+           'kwargs': {'bn_group': None,
+                      'bn_group_size': 1,
+                      'bn_sync_stats': True,
+                      'bn_var_mode': syncbnVarMode_t.L2},
+           'num_class': 152,
+           'type': 'slowfast'},
+ 'momentum': 0.9,
+ 'nesterov': True,
+ 'print_freq': 10,
+ 'save_path': './exps/douyin_exps/tsn_v5_slowfast/colorjitter_lr0.02_gpu8',
+ 'train_root': '/',
+ 'train_source': '/mnt/lustre/share/jipuzhao/benchmarks/douyin/douyin_v5/lists/rgb_train.txt',
+ 'val_freq': 250,
+ 'val_root': '/',
+ 'val_source': '/mnt/lustre/share/jipuzhao/benchmarks/douyin/douyin_v5/lists/rgb_val.txt',
+ 'weight_decay': 0.0001,
+ 'workers': 3}
+[2019-03-12 13:33:26,153] Iter: [0/15010] Time 65.297 (65.297) Data 62.771 (62.771) Loss 5.6835 (5.6835) Prec@1 0.000 (0.000) Prec@5 0.000 (0.000) LR 0.005000
+[2019-03-12 13:33:44,131] Iter: [10/15010] Time 0.165 (1.794) Data 0.000 (1.613) Loss 6.3282 (7.8628) Prec@1 0.000 (0.000) Prec@5 100.000 (20.000) LR 0.005300

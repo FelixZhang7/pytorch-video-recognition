@@ -1,0 +1,50 @@
+common:
+    model:
+        type: tsn # tsm, slowfast
+        backbone: mobilenetv2
+
+        num_segments: 3
+        num_class: 152
+        dropout: 0.8
+        pretrained: True
+    
+        kwargs:
+            bn_group_size: 16
+            bn_sync_stats: True
+            t: 6
+    
+    augmentation:
+        input_size: 224
+        test_resize: 256
+        # colorjitter: [0.2, 0.2, 0.2, 0.1]
+        # random_erasing: [0.5, 0.02, 0.4, 0.3]
+
+    val_dense: False
+
+    workers: 3
+    batch_size: 32
+
+    lr_scheduler:
+        type: STEP 
+        lr_steps: [5000, 9000, 12000]
+        lr_mults: [0.1, 0.1, 0.1]
+
+        base_lr: 0.01
+        warmup_steps: 500
+        warmup_lr: 0.04
+        # min_lr: 0.0
+        max_iter: 15010
+
+    policy: True
+    label_smooth: 0.1
+    momentum: 0.9
+    weight_decay: 0.0001
+    nesterov: True
+
+    val_freq: 250
+    print_freq: 10
+
+    train_root: /
+    train_source: /mnt/lustre/share/jipuzhao/benchmarks/douyin/douyin_v5/lists/rgb_train.txt
+    val_root: /
+    val_source: /mnt/lustre/share/jipuzhao/benchmarks/douyin/douyin_v5/lists/rgb_val.txt

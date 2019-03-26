@@ -1,0 +1,262 @@
+[2019-03-12 21:14:32,006] args: Namespace(config='./exps/douyin_exps/3D_v5_resnet/baseline_lr0.02_gpu8/config.yaml', dynamic_loss_scale=False, evaluate=False, fake=False, fp16=False, fp16_normal_bn=False, fuse_prob=False, fusion_list=None, load_path='', recover=False, static_loss_scale=1, sync=False)
+[2019-03-12 21:14:32,008] config: {'augmentation': {'input_size': 224, 'test_resize': 256},
+ 'batch_size': 1,
+ 'lr_scheduler': {'base_lr': 0.005,
+                  'last_iter': -1,
+                  'lr_mults': [0.1, 0.1, 0.1],
+                  'lr_steps': [5000, 9000, 12000],
+                  'max_iter': 15010,
+                  'optimizer': SGD (
+Parameter Group 0
+    dampening: 0
+    initial_lr: 0.005
+    lr: 0.005
+    momentum: 0.9
+    nesterov: True
+    weight_decay: 0.0001
+),
+                  'type': 'STEP',
+                  'warmup_lr': 0.02,
+                  'warmup_steps': 500},
+ 'model': {'backbone': 'resnet50_3d',
+           'dropout': 0.8,
+           'kwargs': {'bn_group': None,
+                      'bn_group_size': 1,
+                      'bn_sync_stats': True,
+                      'bn_var_mode': syncbnVarMode_t.L2,
+                      'sample_duration': 64,
+                      'sample_size': 224,
+                      'shortcut_type': 'B'},
+           'num_class': 152,
+           'pretrained': False,
+           'type': 'classify'},
+ 'momentum': 0.9,
+ 'nesterov': True,
+ 'print_freq': 10,
+ 'save_path': './exps/douyin_exps/3D_v5_resnet/baseline_lr0.02_gpu8',
+ 'train_root': '/',
+ 'train_source': '/mnt/lustre/share/jipuzhao/benchmarks/douyin/douyin_v5/lists/rgb_train.txt',
+ 'val_freq': 250,
+ 'val_root': '/',
+ 'val_source': '/mnt/lustre/share/jipuzhao/benchmarks/douyin/douyin_v5/lists/rgb_val.txt',
+ 'weight_decay': 0.0001,
+ 'workers': 3}
+[2019-03-12 21:17:22,776] args: Namespace(config='./exps/douyin_exps/3D_v5_resnet/baseline_lr0.02_gpu8/config.yaml', dynamic_loss_scale=False, evaluate=False, fake=False, fp16=False, fp16_normal_bn=False, fuse_prob=False, fusion_list=None, load_path='', recover=False, static_loss_scale=1, sync=False)
+[2019-03-12 21:17:22,779] config: {'augmentation': {'input_size': 224, 'test_resize': 256},
+ 'batch_size': 1,
+ 'lr_scheduler': {'base_lr': 0.005,
+                  'last_iter': -1,
+                  'lr_mults': [0.1, 0.1, 0.1],
+                  'lr_steps': [5000, 9000, 12000],
+                  'max_iter': 15010,
+                  'optimizer': SGD (
+Parameter Group 0
+    dampening: 0
+    initial_lr: 0.005
+    lr: 0.005
+    momentum: 0.9
+    nesterov: True
+    weight_decay: 0.0001
+),
+                  'type': 'STEP',
+                  'warmup_lr': 0.02,
+                  'warmup_steps': 500},
+ 'model': {'backbone': 'resnet50_3d',
+           'dropout': 0.8,
+           'kwargs': {'bn_group': None,
+                      'bn_group_size': 1,
+                      'bn_sync_stats': True,
+                      'bn_var_mode': syncbnVarMode_t.L2,
+                      'sample_duration': 64,
+                      'sample_size': 224,
+                      'shortcut_type': 'B'},
+           'num_class': 152,
+           'pretrained': False,
+           'type': 'classify'},
+ 'momentum': 0.9,
+ 'nesterov': True,
+ 'print_freq': 10,
+ 'save_path': './exps/douyin_exps/3D_v5_resnet/baseline_lr0.02_gpu8',
+ 'train_root': '/',
+ 'train_source': '/mnt/lustre/share/jipuzhao/benchmarks/douyin/douyin_v5/lists/rgb_train.txt',
+ 'val_freq': 250,
+ 'val_root': '/',
+ 'val_source': '/mnt/lustre/share/jipuzhao/benchmarks/douyin/douyin_v5/lists/rgb_val.txt',
+ 'weight_decay': 0.0001,
+ 'workers': 3}
+[2019-03-12 21:21:59,862] args: Namespace(config='./exps/douyin_exps/3D_v5_resnet/baseline_lr0.02_gpu8/config.yaml', dynamic_loss_scale=False, evaluate=False, fake=False, fp16=False, fp16_normal_bn=False, fuse_prob=False, fusion_list=None, load_path='', recover=False, static_loss_scale=1, sync=False)
+[2019-03-12 21:21:59,866] config: {'augmentation': {'input_size': 224, 'test_resize': 256},
+ 'batch_size': 2,
+ 'lr_scheduler': {'base_lr': 0.005,
+                  'last_iter': -1,
+                  'lr_mults': [0.1, 0.1, 0.1],
+                  'lr_steps': [5000, 9000, 12000],
+                  'max_iter': 15010,
+                  'optimizer': SGD (
+Parameter Group 0
+    dampening: 0
+    initial_lr: 0.005
+    lr: 0.005
+    momentum: 0.9
+    nesterov: True
+    weight_decay: 0.0001
+),
+                  'type': 'STEP',
+                  'warmup_lr': 0.02,
+                  'warmup_steps': 500},
+ 'model': {'backbone': 'resnet50_3d',
+           'dropout': 0.8,
+           'kwargs': {'bn_group': None,
+                      'bn_group_size': 1,
+                      'bn_sync_stats': True,
+                      'bn_var_mode': syncbnVarMode_t.L2,
+                      'sample_duration': 64,
+                      'sample_size': 224,
+                      'shortcut_type': 'B'},
+           'num_class': 152,
+           'pretrained': False,
+           'type': 'classify'},
+ 'momentum': 0.9,
+ 'nesterov': True,
+ 'print_freq': 10,
+ 'save_path': './exps/douyin_exps/3D_v5_resnet/baseline_lr0.02_gpu8',
+ 'train_root': '/',
+ 'train_source': '/mnt/lustre/share/jipuzhao/benchmarks/douyin/douyin_v5/lists/rgb_train.txt',
+ 'val_freq': 250,
+ 'val_root': '/',
+ 'val_source': '/mnt/lustre/share/jipuzhao/benchmarks/douyin/douyin_v5/lists/rgb_val.txt',
+ 'weight_decay': 0.0001,
+ 'workers': 3}
+[2019-03-12 21:24:12,830] args: Namespace(config='./exps/douyin_exps/3D_v5_resnet/baseline_lr0.02_gpu8/config.yaml', dynamic_loss_scale=False, evaluate=False, fake=False, fp16=False, fp16_normal_bn=False, fuse_prob=False, fusion_list=None, load_path='', recover=False, static_loss_scale=1, sync=False)
+[2019-03-12 21:24:12,831] config: {'augmentation': {'input_size': 224, 'test_resize': 256},
+ 'batch_size': 1,
+ 'lr_scheduler': {'base_lr': 0.005,
+                  'last_iter': -1,
+                  'lr_mults': [0.1, 0.1, 0.1],
+                  'lr_steps': [5000, 9000, 12000],
+                  'max_iter': 15010,
+                  'optimizer': SGD (
+Parameter Group 0
+    dampening: 0
+    initial_lr: 0.005
+    lr: 0.005
+    momentum: 0.9
+    nesterov: True
+    weight_decay: 0.0001
+),
+                  'type': 'STEP',
+                  'warmup_lr': 0.02,
+                  'warmup_steps': 500},
+ 'model': {'backbone': 'resnet50_3d',
+           'dropout': 0.8,
+           'kwargs': {'bn_group': None,
+                      'bn_group_size': 1,
+                      'bn_sync_stats': True,
+                      'bn_var_mode': syncbnVarMode_t.L2,
+                      'sample_duration': 64,
+                      'sample_size': 224,
+                      'shortcut_type': 'B'},
+           'num_class': 152,
+           'pretrained': False,
+           'type': 'classify'},
+ 'momentum': 0.9,
+ 'nesterov': True,
+ 'print_freq': 10,
+ 'save_path': './exps/douyin_exps/3D_v5_resnet/baseline_lr0.02_gpu8',
+ 'train_root': '/',
+ 'train_source': '/mnt/lustre/share/jipuzhao/benchmarks/douyin/douyin_v5/lists/rgb_train.txt',
+ 'val_freq': 250,
+ 'val_root': '/',
+ 'val_source': '/mnt/lustre/share/jipuzhao/benchmarks/douyin/douyin_v5/lists/rgb_val.txt',
+ 'weight_decay': 0.0001,
+ 'workers': 3}
+[2019-03-12 21:24:46,773] Iter: [0/15010] Time 33.937 (33.937) Data 32.560 (32.560) Loss 4.7881 (4.7881) Prec@1 0.000 (0.000) Prec@5 0.000 (0.000) LR 0.005000
+[2019-03-12 21:25:06,659] Iter: [10/15010] Time 0.714 (1.987) Data 0.000 (1.419) Loss 9.8759 (15.6544) Prec@1 0.000 (0.000) Prec@5 0.000 (20.000) LR 0.005300
+[2019-03-12 21:45:17,372] args: Namespace(config='./exps/douyin_exps/3D_v5_resnet/baseline_lr0.02_gpu8/config.yaml', dynamic_loss_scale=False, evaluate=False, fake=False, fp16=False, fp16_normal_bn=False, fuse_prob=False, fusion_list=None, load_path='', recover=False, static_loss_scale=1, sync=False)
+[2019-03-12 21:45:17,374] config: {'augmentation': {'input_size': 224, 'test_resize': 256},
+ 'batch_size': 1,
+ 'lr_scheduler': {'base_lr': 0.005,
+                  'last_iter': -1,
+                  'lr_mults': [0.1, 0.1, 0.1],
+                  'lr_steps': [5000, 9000, 12000],
+                  'max_iter': 15010,
+                  'optimizer': SGD (
+Parameter Group 0
+    dampening: 0
+    initial_lr: 0.005
+    lr: 0.005
+    momentum: 0.9
+    nesterov: True
+    weight_decay: 0.0001
+),
+                  'type': 'STEP',
+                  'warmup_lr': 0.02,
+                  'warmup_steps': 500},
+ 'model': {'backbone': 'resnet50_3d',
+           'dropout': 0.8,
+           'kwargs': {'bn_group': None,
+                      'bn_group_size': 1,
+                      'bn_sync_stats': True,
+                      'bn_var_mode': syncbnVarMode_t.L2,
+                      'sample_duration': 64,
+                      'sample_size': 224,
+                      'shortcut_type': 'B'},
+           'num_class': 152,
+           'pretrained': False,
+           'type': 'classify'},
+ 'momentum': 0.9,
+ 'nesterov': True,
+ 'print_freq': 10,
+ 'save_path': './exps/douyin_exps/3D_v5_resnet/baseline_lr0.02_gpu8',
+ 'train_root': '/',
+ 'train_source': '/mnt/lustre/share/jipuzhao/benchmarks/douyin/douyin_v5/lists/rgb_train.txt',
+ 'val_freq': 250,
+ 'val_root': '/',
+ 'val_source': '/mnt/lustre/share/jipuzhao/benchmarks/douyin/douyin_v5/lists/rgb_val.txt',
+ 'weight_decay': 0.0001,
+ 'workers': 3}
+[2019-03-12 21:46:56,856] args: Namespace(config='./exps/douyin_exps/3D_v5_resnet/baseline_lr0.02_gpu8/config.yaml', dynamic_loss_scale=False, evaluate=False, fake=False, fp16=False, fp16_normal_bn=False, fuse_prob=False, fusion_list=None, load_path='', recover=False, static_loss_scale=1, sync=False)
+[2019-03-12 21:46:56,858] config: {'augmentation': {'input_size': 224, 'test_resize': 256},
+ 'batch_size': 2,
+ 'lr_scheduler': {'base_lr': 0.005,
+                  'last_iter': -1,
+                  'lr_mults': [0.1, 0.1, 0.1],
+                  'lr_steps': [5000, 9000, 12000],
+                  'max_iter': 15010,
+                  'optimizer': SGD (
+Parameter Group 0
+    dampening: 0
+    initial_lr: 0.005
+    lr: 0.005
+    momentum: 0.9
+    nesterov: True
+    weight_decay: 0.0001
+),
+                  'type': 'STEP',
+                  'warmup_lr': 0.02,
+                  'warmup_steps': 500},
+ 'model': {'backbone': 'resnet50_3d',
+           'dropout': 0.8,
+           'kwargs': {'bn_group': None,
+                      'bn_group_size': 1,
+                      'bn_sync_stats': True,
+                      'bn_var_mode': syncbnVarMode_t.L2,
+                      'sample_duration': 64,
+                      'sample_size': 224,
+                      'shortcut_type': 'B'},
+           'num_class': 152,
+           'pretrained': False,
+           'type': 'classify'},
+ 'momentum': 0.9,
+ 'nesterov': True,
+ 'print_freq': 10,
+ 'save_path': './exps/douyin_exps/3D_v5_resnet/baseline_lr0.02_gpu8',
+ 'train_root': '/',
+ 'train_source': '/mnt/lustre/share/jipuzhao/benchmarks/douyin/douyin_v5/lists/rgb_train.txt',
+ 'val_freq': 250,
+ 'val_root': '/',
+ 'val_source': '/mnt/lustre/share/jipuzhao/benchmarks/douyin/douyin_v5/lists/rgb_val.txt',
+ 'weight_decay': 0.0001,
+ 'workers': 3}
+[2019-03-12 21:47:38,141] Iter: [0/15010] Time 41.267 (41.267) Data 40.417 (40.417) Loss 5.3246 (5.3246) Prec@1 0.000 (0.000) Prec@5 0.000 (0.000) LR 0.005000
+[2019-03-12 21:48:45,323] Iter: [10/15010] Time 0.734 (6.716) Data 0.000 (6.337) Loss 11.1273 (11.5546) Prec@1 0.000 (0.000) Prec@5 0.000 (10.000) LR 0.005300
